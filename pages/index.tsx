@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -50,6 +51,17 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+
+          <Link href="/posts/first-post">
+            <a 
+              className={styles.card}
+            >
+              <h2>First Post &rarr;</h2>
+              <p>
+                Link to the first post.
+              </p>
+            </a>
+          </Link>
         </div>
       </main>
 
